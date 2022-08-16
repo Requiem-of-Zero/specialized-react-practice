@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const BannerWrapper = styled.div`
+  position: relative;
   border: 1px solid black;
   background: ${({ imgUrl }) => `url(${imgUrl})`};
-  height: 900px;
+  background-size: cover;
+  height: 1200px;
 `;

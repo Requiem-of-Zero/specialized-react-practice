@@ -1,20 +1,21 @@
 import React from "react";
 import { ButtonWrapper } from "./Button.styles";
-import { Link } from "react-router-dom";
 
-const Button = ({ url, ctaTxt, opensNewTab, ctaStyle }) => {
-  const handleNewTab = () => {
-    const condition = false;
-    if (opensNewTab) {
-      condition = true;
+const Button = ({ url, ctaTxt, opensNewTab}) => {
+  const handleClick = () => {
+    if(opensNewTab){
+      return '_self'
+    } else {
+      return '_blank'
     }
-    return condition;
-  };
+  }
   return (
     <ButtonWrapper>
-      <a href="">{console.log(ctaTxt)}</a>
+      <a href={url} target={handleClick()}>
+        {ctaTxt}
+      </a>
     </ButtonWrapper>
   );
 };
 
-export default ShopNow;
+export default Button;
