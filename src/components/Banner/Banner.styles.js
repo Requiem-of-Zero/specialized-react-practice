@@ -5,13 +5,15 @@ export const BannerWrapper = styled.div`
   border: 1px solid black;
   background: ${({ imgUrl }) => `url(${imgUrl})`};
   background-size: cover;
-  height: 1000px;
+  height: 1100px;
+  width: 100%;
 `;
 
 export const ContentContainer = styled.div`
   position: absolute;
   bottom: 40%;
-  width: 40rem;
+  right: 10%;
+  max-width: 500px;
 `;
 
 export const BannerContainer = styled.div`

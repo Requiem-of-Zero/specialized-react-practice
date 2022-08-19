@@ -4,7 +4,6 @@ export const SecondaryFooterWrapper = styled.div`
   background-color: #000;
   width: 100%;
   height: 160px;
-  border: 1px solid #000;
 `;
 
 export const SecondaryFooterContentContainer = styled.div`

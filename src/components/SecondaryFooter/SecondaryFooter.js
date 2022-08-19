@@ -16,8 +16,8 @@ const SecondaryFooter = ({ footerLinks }) => {
           {footerLinks.map((obj, i) => {
             const key = "legal_link-" + i;
             return (
-              <li>
-                <LegalLink href={obj.url}>{obj.label}</LegalLink>
+              <li key={i}>
+                <LegalLink href={obj.url} key={key}>{obj.label}</LegalLink>
               </li>
             );
           })}

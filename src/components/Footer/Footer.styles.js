@@ -6,6 +6,7 @@ export const FooterWrapper = styled.div`
   height: 100%;
   background-color: #121212;
   border: 1px solid #121212;
+  max-width: 100%;
 `;
 
 export const FooterContainer = styled.div`

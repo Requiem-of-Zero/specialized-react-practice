@@ -23,6 +23,7 @@ export const FooterInputField = styled.input`
   background-color: #414141;
   font-size: 14px;
   padding-left: 9px;
+  border: none;
 `;
 
 export const FooterInputButton = styled.button`
@@ -30,7 +31,7 @@ export const FooterInputButton = styled.button`
   color: white;
   width: 80px;
   height: 100%;
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   border-color: #c61017;
   cursor: pointer;
 `;
