@@ -1,24 +1,14 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
-display: flex;
-height: 10rem`;
-
-export const SupportCol = styled.div`
+  padding: 45px 0;
   display: flex;
-  flex-direction: column;
+  height: 100%;
+  background-color: #121212;
 `;
 
-export const ResourcesCol = styled.div`
+export const FooterContainer = styled.div`
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  max-width: 900px;
 `;
-
-export const AboutCol = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-
-export const FooterNavHeader = styled.h5`
-`

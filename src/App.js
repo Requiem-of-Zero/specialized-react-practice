@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "./components/Banner/Banner";
 import Tiles from "./components/HorizontalTiles/Tiles";
 import Footer from "./components/Footer/Footer";
-import { bannerArgs, products } from "./constants";
+import { bannerArgs, products, sections } from "./constants";
 
 class App extends React.Component {
   render() {
@@ -11,7 +11,7 @@ class App extends React.Component {
       <>
         <Banner {...bannerArgs} />
         <Tiles products={products} />
-        <Footer />
+        <Footer sections={sections} />
       </>
     );
   }
