@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Banner from "./components/Banner/Banner";
 import Tiles from "./components/HorizontalTiles/Tiles";
 import Footer from "./components/Footer/Footer";
+import SecondaryNavBar from "./components/SecondaryNavBar/SecondayNavBar";
 import SecondaryFooter from "./components/SecondaryFooter/SecondaryFooter";
 
 import { bannerArgs, products } from "./constants";
@@ -12,7 +13,8 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <NavBar categories={categories}/>
+        <SecondaryNavBar/>
+        <NavBar categories={categories} />
         <Banner {...bannerArgs} />
         <Tiles products={products} />
         <Footer sections={sections} socials={socials} />

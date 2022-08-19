@@ -7,6 +7,7 @@ export const BannerWrapper = styled.div`
   background-size: cover;
   height: 1100px;
   width: 100%;
+  border: none;
 `;
 
 export const ContentContainer = styled.div`
