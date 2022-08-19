@@ -5,6 +5,7 @@ export const FooterWrapper = styled.div`
   display: flex;
   height: 100%;
   background-color: #121212;
+  border: 1px solid #121212;
 `;
 
 export const FooterContainer = styled.div`

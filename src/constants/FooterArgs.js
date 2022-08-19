@@ -1,4 +1,4 @@
-const sections = [
+export const sections = [
   {
     sectionTitle: "Support",
     sectionLinks: [
@@ -49,7 +49,6 @@ const sections = [
         linkText: "Bike Archive",
         opensNewTab: true,
       },
-      { url: "https://www.google.com", linkText: "FAQ", opensNewTab: true },
       {
         url: "https://www.google.com",
         linkText: "Demo and Events",
@@ -129,11 +128,44 @@ const sections = [
   },
 ];
 
-const socials = [
+export const socials = [
   {
     platform: "instagram",
-    redirectUrl: "",
+    redirectUrl: "https://www.instagram.com",
+  },
+  {
+    platform: "facebook",
+    redirectUrl: "https://www.facebook.com",
+  },
+  {
+    platform: "twitter",
+    redirectUrl: "https://www.twitter.com",
+  },
+  {
+    platform: "youtube",
+    redirectUrl: "https://www.youtube.com",
   },
 ];
 
-export default sections;
+export const legalLinks = [
+  {
+    label: "Privacy",
+    url: "https://www.google.com",
+    opensNewTab: true,
+  },
+  {
+    label: "Terms & Conditions",
+    url: "https://www.google.com",
+    opensNewTab: true,
+  },
+  {
+    label: "Terms Of Use",
+    url: "https://www.google.com",
+    opensNewTab: true,
+  },
+  {
+    label: "Do Not Sell My Personal Information (California)",
+    url: "https://www.google.com",
+    opensNewTab: true,
+  },
+];

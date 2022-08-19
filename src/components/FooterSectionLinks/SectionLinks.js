@@ -1,5 +1,4 @@
 import React from "react";
-import sections from "../../constants/FooterArgs";
 import {
   SectionLinksList,
   SectionTitle,
@@ -12,8 +11,8 @@ const SectionLinks = ({ sectionTitle, sectionLinks }) => {
       {sectionLinks.map((link, i) => {
         const key = "footer_link-" + i;
         return (
-          <li>
-            <SectionLink href={link.url}>{link.linkText}</SectionLink>
+          <li key={i}>
+            <SectionLink href={link.url} key={key}>{link.linkText}</SectionLink>
           </li>
         );
       })}
