@@ -30,6 +30,7 @@ export const NavBarCtaContainer = styled.div`
 export const NavBarLogo = styled.img`
   width: 150px;
   height: 100%;
+  margin-left: 30px;
 `;
 
 export const NavBarLinks = styled.ul`
@@ -68,6 +69,8 @@ export const NavBarWishlistIcon = styled.a`
 
 export const NavBarCart = styled.a`
   color: black;
+  transform: scaleX(-1);
+  margin-right: 30px;
   &:hover {
     color: #ed1c24;
     transition: color 0.2s ease-out;

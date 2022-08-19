@@ -6,6 +6,9 @@ import {
   UserAuth,
   FindRetailer,
   FindRetailerLink,
+  Flag,
+  Language,
+  LoginButton,
 } from "./SecondaryNavBar.styles";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
@@ -16,14 +19,18 @@ const SecondaryNavBar = () => {
         <ShippingCTAtxt href="#">
           Free Shipping on orders over $50*
         </ShippingCTAtxt>
-      </SecondaryNavContentContainer>
-      <UserAuth>
-        <FindRetailer>
+        <UserAuth>
           <FindRetailerLink href="#">
-            <LocationOnIcon />
+            <LocationOnIcon className="location-icon" />
+            Find A Retailer
           </FindRetailerLink>
-        </FindRetailer>
-      </UserAuth>
+          <Language href="#English">
+            <Flag src="https://www.specialized.com/_ui/addons/specializedstorefrontaddon/desktop/common/images/flags/country-US.svg" />
+            EN
+          </Language>
+          <LoginButton href="sign_in">Sign In</LoginButton>
+        </UserAuth>
+      </SecondaryNavContentContainer>
     </SecondaryNavBarWrapper>
   );
 };
