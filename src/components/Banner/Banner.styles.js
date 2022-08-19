@@ -38,4 +38,5 @@ export const BannerSubHeader = styled.h5`
   color: #fff;
   font-size: 12px;
   padding-bottom: 0.5rem;
+  letter-spacing: 0.2rem;
 `;

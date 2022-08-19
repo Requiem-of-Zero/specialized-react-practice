@@ -2,5 +2,7 @@ import styled from "styled-components";
 
 export const HorizontalTilesContainer = styled.div`
   display: flex;
-  height: 400px;
+  justify-content: space-around;
+  max-width: 100%;
+  padding: 32px 16px 0;
 `;

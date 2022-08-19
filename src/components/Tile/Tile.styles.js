@@ -1,17 +1,29 @@
 import styled from "styled-components";
 
 export const TileWrapper = styled.div`
-    height: 400px;
-`
+  height: 100%;
+  width: 25%;
+  padding: 0 16px;
+`;
 
 export const ProductImg = styled.img`
-    width: 100%;
-`
+  height: calc(25vw - 37.5px);
+  width: 100%;
+  background-size: cover;
+`;
 
 export const ProductLink = styled.a`
-
-`
+  text-align: center;
+  text-decoration: none;
+  color: #414141;
+  height: 100%;
+`;
 
 export const ProductTitle = styled.h2`
+  padding: 2rem 2rem;
+  font-size: 16px;
+`;
 
-`
+export const NewProductImg = styled.div`
+
+`;

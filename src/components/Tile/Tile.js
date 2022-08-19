@@ -6,7 +6,7 @@ const Tile = ({ productImgUrl, productName, redirectUrl }) => {
     <TileWrapper>
         <ProductLink href={redirectUrl}>
             <ProductImg src={productImgUrl}/>
-            <ProductTitle>{productName}</ProductTitle>
+            <ProductTitle>Shop {productName}</ProductTitle>
         </ProductLink>
     </TileWrapper>
   )
