@@ -1,15 +1,31 @@
 import React from "react";
-import { BannerWrapper } from "./Banner.styles";
-import CtaOne from "../CtaOne/CtaOne";
-const Banner = ({subtitle,title, shopNowArgs, learnMoreArgs, imgUrl}) => {
-  return <BannerWrapper imgUrl={imgUrl}>
-    <CtaOne 
-      subtitle={subtitle} 
-      title={title} 
-      shopNowArgs={shopNowArgs} 
-      learnMoreArgs={learnMoreArgs}
-    />
-  </BannerWrapper>;
+import {
+  BannerWrapper,
+  ContentContainer,
+  CtaContainer,
+  BannerContainer,
+  BannerHeader,
+  BannerSubHeader,
+} from "./Banner.styles";
+import Button from "../Button/Button";
+
+const Banner = ({ subtitle, title, ctas, imgUrl }) => {
+  return (
+    <BannerWrapper imgUrl={imgUrl}>
+      <BannerContainer>
+        <ContentContainer>
+          <BannerSubHeader>{subtitle}</BannerSubHeader>
+          <BannerHeader>{title}</BannerHeader>
+        <CtaContainer>
+          {ctas.map((cta, i) => {
+            const key = "bannerCta-" + i;
+            return <Button {...cta} key={key} />;
+          })}
+        </CtaContainer>
+        </ContentContainer>
+      </BannerContainer>
+    </BannerWrapper>
+  );
 };
 
-export default Banner
+export default Banner;

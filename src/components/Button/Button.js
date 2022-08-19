@@ -1,19 +1,36 @@
 import React from "react";
-import { ButtonWrapper } from "./Button.styles";
+import { ButtonWrapper, ButtonLink } from "./Button.styles";
 
-const Button = ({ url, ctaTxt, opensNewTab}) => {
+const Button = ({ url, ctaTxt, opensNewTab, color }) => {
   const handleClick = () => {
-    if(opensNewTab){
-      return '_self'
+    if (opensNewTab) {
+      return "_blank";
     } else {
-      return '_blank'
+      return "_self";
     }
-  }
+  };
+
+  const handleBgColor = () => {
+    if (color === "primary") {
+      return "#FFF";
+    } else if (color === "secondary") {
+      return "transparent";
+    }
+  };
+
+  const handleTextColor = () => {
+    if (color === "primary") {
+      return "black";
+    } else if (color === "secondary") {
+      return "#FFF";
+    }
+  };
+
   return (
-    <ButtonWrapper>
-      <a href={url} target={handleClick()}>
+    <ButtonWrapper color={handleBgColor()}>
+      <ButtonLink href={url} color={handleTextColor()} target={handleClick()}>
         {ctaTxt}
-      </a>
+      </ButtonLink>
     </ButtonWrapper>
   );
 };

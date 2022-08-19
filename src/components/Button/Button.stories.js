@@ -4,7 +4,7 @@ import Button from "./Button";
 export default {
   title: "Button",
   component: Button,
-  opensNewTab: true
+  opensNewTab: true,
 };
 
 const Template = (args) => <Button {...args} />;
@@ -12,12 +12,13 @@ const Template = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 
 Primary.args = {
-    url: "https://www.specialized.com/us/en/shop/clothing/c/clothing#/filter:productfamily:Prime-Series",
-    ctaTxt: "Shop Now",
-    ctaStyle: "primary"
+  ctaTxt: "Shop Now",
+  ctaStyle: "primary",
+  opensNewTab: true,
 };
 
 Secondary.args = {
   ctaTxt: "Learn More",
-  ctaStyle: "secondary"
-}
+  ctaStyle: "secondary",
+  opensNewTab: true,
+};

@@ -1,9 +1,18 @@
 import styled from "styled-components";
 
 export const ButtonWrapper = styled.div`
-    border: 1px solid black;
-    background-color: ${};
-    padding: 1rem 3rem;
-    width: 5rem;
-    cursor: pointer;
-`
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  background-color: ${({ color }) => color};
+  min-width: 166px;
+  cursor: pointer;
+`;
+
+export const ButtonLink = styled.a`
+  color: ${({ color }) => color};
+  text-decoration: none;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+`;
