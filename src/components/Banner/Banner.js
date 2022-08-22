@@ -16,12 +16,12 @@ const Banner = ({ subtitle, title, ctas, imgUrl }) => {
         <ContentContainer>
           <BannerSubHeader>{subtitle}</BannerSubHeader>
           <BannerHeader>{title}</BannerHeader>
-        <CtaContainer>
-          {ctas.map((cta, i) => {
-            const key = "bannerCta-" + i;
-            return <Button {...cta} key={key} />;
-          })}
-        </CtaContainer>
+          <CtaContainer>
+            {ctas.map((cta, i) => {
+              const key = "bannerCta-" + i;
+              return <Button {...cta} key={key} />;
+            })}
+          </CtaContainer>
         </ContentContainer>
       </BannerContainer>
     </BannerWrapper>

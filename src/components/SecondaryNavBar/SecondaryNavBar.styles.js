@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SecondaryNavBarWrapper = styled.div`
   width: 100%;
   background-color: black;
-  height: 30px;
+  height: 32px;
   z-index: 8;
 `;
 

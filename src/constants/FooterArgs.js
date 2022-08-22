@@ -130,19 +130,19 @@ export const sections = [
 
 export const socials = [
   {
-    platform: "instagram",
+    platform: "Instagram",
     redirectUrl: "https://www.instagram.com",
   },
   {
-    platform: "facebook",
+    platform: "Facebook",
     redirectUrl: "https://www.facebook.com",
   },
   {
-    platform: "twitter",
+    platform: "Twitter",
     redirectUrl: "https://www.twitter.com",
   },
   {
-    platform: "youtube",
+    platform: "Youtube",
     redirectUrl: "https://www.youtube.com",
   },
 ];

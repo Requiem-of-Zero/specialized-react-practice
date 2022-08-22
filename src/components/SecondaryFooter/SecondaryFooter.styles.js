@@ -15,7 +15,7 @@ export const SecondaryFooterContentContainer = styled.div`
 
 export const LegalLinksList = styled.ul`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
   padding-bottom: 16px;
 `;
