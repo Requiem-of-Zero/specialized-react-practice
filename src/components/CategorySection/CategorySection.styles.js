@@ -13,10 +13,11 @@ export const CategorySectionList = styled.ul`
   line-height: 15px;
   display: flex;
   flex-direction: column;
+  list-style: none;
   >li {
     margin-bottom: 10px;
   }
-`;
+  `;
 
 export const CategorySectionLink = styled.a`
   text-decoration: none;
