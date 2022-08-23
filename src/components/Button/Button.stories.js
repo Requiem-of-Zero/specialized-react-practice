@@ -10,6 +10,7 @@ export default {
 const Template = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
+export const Secondary = Template.bind({});
 
 Primary.args = {
   ctaTxt: "Shop Now",

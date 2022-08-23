@@ -18,7 +18,7 @@ const Bikes = {
       ctaText: "Shop By Model",
       url: "https://www.google.com",
       opensNewTab: true,
-      color: "primary",
+      color: "primary_blk_brdr",
     },
   },
 
@@ -57,19 +57,19 @@ const Bikes = {
             sectionUrl: "https://www.google.com",
             sectionLinks: [
               {
-                label: "Cross Country",
+                label: "Performancer",
                 url: "https://www.google.com",
               },
               {
-                label: "Trail",
+                label: "Gravel",
                 url: "https://www.google.com",
               },
               {
-                label: "Downhill",
+                label: "Cyclocross",
                 url: "https://www.google.com",
               },
               {
-                label: "BMX / Dirt Jump",
+                label: "Triathlon",
                 url: "https://www.google.com",
               },
               {
@@ -78,10 +78,65 @@ const Bikes = {
               },
             ],
           },
+          {
+            sectionTitle: "Active",
+            sectionUrl: "https://www.google.com",
+            sectionLinks: [
+              {
+                label: "Fitness",
+                url: "https://www.google.com",
+              },
+              {
+                label: "Transport",
+                url: "https://www.google.com",
+              },
+              {
+                label: "Comfort",
+                url: "https://www.google.com",
+              },
+            ],
+          },
+          {
+            sectionTitle: "Kids",
+            sectionUrl: "https://www.google.com",
+            sectionLinks: [
+              {
+                label: "Toddler (1.5 - 4 Y)",
+                url: "https://www.google.com",
+              },
+              {
+                label: "Little Kids (4 - 7 Y)",
+                url: "https://www.google.com",
+              },
+              {
+                label: "Big Kids (7 - 10+ Y)",
+                url: "https://www.google.com",
+              },
+            ],
+          },
+          {
+            sectionTitle: "Turbo E-Bikes",
+            sectionUrl: "https://www.google.com",
+            sectionLinks: [
+              {
+                label: "Road",
+                url: "https://www.google.com",
+              },
+              {
+                label: "Mountain",
+                url: "https://www.google.com",
+              },
+              {
+                label: "Active",
+                url: "https://www.google.com",
+              },
+            ],
+          },
         ],
       },
     ],
   },
+
   megaNavRightSection: {
     categorySections: [
       {
