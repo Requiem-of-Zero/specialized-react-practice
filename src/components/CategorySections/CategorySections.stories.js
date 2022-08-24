@@ -1,6 +1,5 @@
 import React from "react";
 import CategorySections from "./CategorySections";
-import CategorySection from './CategorySection/CategorySection';
 import model from "./data/model";
 
 export default {
@@ -10,8 +9,8 @@ export default {
 
 const Template = (args) => <CategorySections {...args} />;
 
-export const Bikes = Template.bind({});
+export const Kids = Template.bind({});
 
-Bikes.args = {
+Kids.args = {
     ...model
 };

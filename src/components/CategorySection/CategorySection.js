@@ -12,7 +12,7 @@ const CategorySection = ({ sectionTitle, sectionUrl, sectionLinks }) => {
     <CategorySectionWrapper>
       <CategorySectionContainer>
         <CategorySectionList>
-        <CategorySectionHeaderLink href={sectionUrl}>
+        <CategorySectionHeaderLink href={sectionUrl} id='category-header'>
           {sectionTitle}
         </CategorySectionHeaderLink>
         {sectionLinks.map((section, i) => {
