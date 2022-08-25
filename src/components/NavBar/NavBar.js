@@ -11,6 +11,7 @@ import {
   NavBarCart,
   NavBarContainer,
 } from "./NavBar.styles";
+import MegaNav from "../MegaNav/MegaNav";
 import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";

@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const MegaNavWrapper = styled.div`
-width: 100%;
+  width: 100%;
 `;
 
 export const MegaNavContainer = styled.div`
-  margin: 0 auto;
+  width: 100%;
   display: flex;
+  justify-content: center;
 `;
 
 export const MegaNavLeftContainer = styled.div`
