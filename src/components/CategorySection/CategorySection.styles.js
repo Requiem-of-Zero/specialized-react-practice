@@ -14,6 +14,8 @@ export const CategorySectionList = styled.ul`
   display: flex;
   flex-direction: column;
   list-style: none;
+  padding-bottom: 15px;
+  padding: 0 30px 20px 0 ;
   >li {
     margin-bottom: 10px;
   }

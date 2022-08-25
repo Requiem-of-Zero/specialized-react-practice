@@ -15,6 +15,8 @@ const Button = ({ url, ctaTxt, opensNewTab, color }) => {
       return "#FFF";
     } else if (color === "secondary") {
       return "transparent";
+    } else if (color === "primary_blk_brdr") {
+      return "tranparent";
     }
   };
 
@@ -23,11 +25,23 @@ const Button = ({ url, ctaTxt, opensNewTab, color }) => {
       return "black";
     } else if (color === "secondary") {
       return "#FFF";
+    } else if (color === "primary_blk_brdr") {
+      return "black";
+    }
+  };
+
+  const handleHoverColor = () => {
+    if (color === "primary_blk_brdr") {
+      return "#e6e6e6";
     }
   };
 
   return (
-    <ButtonWrapper color={handleBgColor()}>
+    <ButtonWrapper
+      color={handleBgColor()}
+      border={handleTextColor()}
+      hover={handleHoverColor()}
+    >
       <ButtonLink href={url} color={handleTextColor()} target={handleClick()}>
         {ctaTxt}
       </ButtonLink>

@@ -1,40 +1,23 @@
-const model = [ {
-    sectionTitle: 'Active',
-    sectionUrl: 'https://www.google.com',
+const model = [
+  {
+    sectionTitle: "Innovation",
+    sectionUrl: "https://www.google.com",
     sectionLinks: [
-        {
-          label: "Fitness",
-          url: "https://www.google.com",
-        },
-        {
-          label: "Transport",
-          url: "https://www.google.com",
-        },
-        {
-          label: "Comfort",
-          url: "https://www.google.com",
-        },
-      ]
-},
-{
-    sectionTitle: 'Kids',
-    sectionUrl: 'https://www.google.com',
+      { label: "Aero is Everything", url: "https://www.google.com" },
+      { label: "Turbo Technology", url: "https://www.google.com" },
+      { label: "Brain Technology", url: "https://www.google.com" },
+      { label: "FACT™ Carbon Fiber", url: "https://www.google.com" },
+    ],
+  },
+  {
+    sectionTitle: "Resources",
+    sectionUrl: "https://www.google.com",
     sectionLinks: [
-        {
-          label: "Fitness",
-          url: "https://www.google.com",
-        },
-        {
-          label: "Transport",
-          url: "https://www.google.com",
-        },
-        {
-          label: "Comfort",
-          url: "https://www.google.com",
-        },
-      ]
-}
-
-]
+      { label: "Suspension Calculator", url: "https://www.google.com" },
+      { label: "Ride App", url: "https://www.google.com" },
+      { label: "Tire Finder", url: "https://www.google.com" },
+    ],
+  },
+];
 
 export default model;

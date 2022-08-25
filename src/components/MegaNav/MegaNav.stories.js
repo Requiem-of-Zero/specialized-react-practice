@@ -1,5 +1,6 @@
 import React from "react";
 import MegaNav from "./MegaNav";
+import model from "./data/model";
 
 export default {
   title: "MegaNav",
@@ -8,6 +9,8 @@ export default {
 
 const Template = (args) => <MegaNav {...args} />;
 
-export const Primary = Template.bind({});
+export const BikeNav = Template.bind({});
 
-Primary.args = {  }
+BikeNav.args = { 
+  ...model
+}

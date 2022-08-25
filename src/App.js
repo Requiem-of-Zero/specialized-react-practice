@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "./components/NavBar/NavBar";
+import MegaNav from "./components/MegaNav/MegaNav";
 import Banner from "./components/Banner/Banner";
 import Tiles from "./components/HorizontalTiles/Tiles";
 import Footer from "./components/Footer/Footer";
@@ -9,12 +10,15 @@ import SecondaryFooter from "./components/SecondaryFooter/SecondaryFooter";
 import { bannerArgs, products } from "./constants";
 import { categories } from "./constants/NavBarArgs";
 import { sections, socials, legalLinks } from "./constants/FooterArgs";
+import { Bikes } from "./constants/MegaNavArgs";
+
 class App extends React.Component {
   render() {
     return (
       <>
-        <SecondaryNavBar/>
+        <SecondaryNavBar {...Bikes} />
         <NavBar categories={categories} />
+        <MegaNav {...Bikes} />
         <Banner {...bannerArgs} />
         <Tiles products={products} />
         <Footer sections={sections} socials={socials} />

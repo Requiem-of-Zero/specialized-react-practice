@@ -1,4 +1,4 @@
-export const Bikes = {
+const model = {
   megaNavLeftSection: {
     links: [
       {
@@ -166,3 +166,5 @@ export const Bikes = {
     ],
   },
 };
+
+export default model;

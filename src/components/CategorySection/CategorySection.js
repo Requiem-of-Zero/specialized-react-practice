@@ -6,21 +6,21 @@ import {
   CategorySectionHeaderLink,
   CategorySectionList
 } from "./CategorySection.styles";
-
-const CategorySection = ({ sectionTitle, sectionUrl, sectionLinks }) => {
-  return (
+import model from "../CategorySection/data/model";
+const CategorySection = ({ section }) => {
+  return section.map(s => (
     <CategorySectionWrapper>
       <CategorySectionContainer>
         <CategorySectionList>
-        <CategorySectionHeaderLink href={sectionUrl} id='category-header'>
-          {sectionTitle}
+        <CategorySectionHeaderLink href={s.sectionUrl} id='category-header'>
+          {s.sectionTitle}
         </CategorySectionHeaderLink>
-        {sectionLinks.map((section, i) => {
+        {s.sectionLinks.map((link, i) => {
           const key = "section_link" + i;
           return (
             <li>
-              <CategorySectionLink href={section.url} key={key}>
-                {section.label}
+              <CategorySectionLink href={link.url} key={key}>
+                {link.label}
               </CategorySectionLink>
             </li>
           );
@@ -28,7 +28,8 @@ const CategorySection = ({ sectionTitle, sectionUrl, sectionLinks }) => {
         </CategorySectionList>
       </CategorySectionContainer>
     </CategorySectionWrapper>
-  );
+    )
+  )
 };
 
 export default CategorySection;
