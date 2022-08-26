@@ -1,6 +1,6 @@
 import React from "react";
 import MegaNav from "./MegaNav";
-import model from "./data/model";
+import { categories } from "../../constants/NavBarArgs";
 
 export default {
   title: "MegaNav",
@@ -12,5 +12,5 @@ const Template = (args) => <MegaNav {...args} />;
 export const BikeNav = Template.bind({});
 
 BikeNav.args = { 
-  ...model
+  ...categories
 }

@@ -10,15 +10,13 @@ import SecondaryFooter from "./components/SecondaryFooter/SecondaryFooter";
 import { bannerArgs, products } from "./constants";
 import { categories } from "./constants/NavBarArgs";
 import { sections, socials, legalLinks } from "./constants/FooterArgs";
-import { Bikes } from "./constants/MegaNavArgs";
 
 class App extends React.Component {
   render() {
     return (
       <>
-        <SecondaryNavBar {...Bikes} />
-        <NavBar categories={categories} />
-        <MegaNav {...Bikes} />
+        <SecondaryNavBar />
+        <NavBar categories={categories}/>
         <Banner {...bannerArgs} />
         <Tiles products={products} />
         <Footer sections={sections} socials={socials} />

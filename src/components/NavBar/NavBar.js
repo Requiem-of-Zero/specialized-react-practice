@@ -12,11 +12,29 @@ import {
   NavBarContainer,
 } from "./NavBar.styles";
 import MegaNav from "../MegaNav/MegaNav";
+import { useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
-const NavBar = ({ categories }) => {
+const NavBar = ( categories ) => {
+  console.log(categories, 'categories')
+  const handleCategoryNav = (categories) => {
+    const keys = Object.keys(categories)
+    const result = [];
+    for (let i = 0; i < keys.length; i++) {
+      let key = keys[i]
+      result.push(
+        <li>
+          <NavBarLink href={categories[key].categoryUrl}>
+            {categories[key].categoryTitle}
+          </NavBarLink>
+        </li>
+      );
+    }
+    return result;
+  };
+
   return (
     <NavBarWrapper>
       <NavBarContainer>
@@ -24,18 +42,7 @@ const NavBar = ({ categories }) => {
           <NavBarLogo src="https://cdn.shopify.com/s/files/1/0904/4132/files/spec-logo-bp.jpg?v=1585000290" />
         </a>
         <NavBarLinksContainer>
-          <NavBarLinks>
-            {categories.map((category, i) => {
-              const key = "nav_link-" + i;
-              return (
-                <li key={i}>
-                  <NavBarLink href="#" key={key}>
-                    {category.categoryTitle}
-                  </NavBarLink>
-                </li>
-              );
-            })}
-          </NavBarLinks>
+          <NavBarLinks>{handleCategoryNav(categories)}</NavBarLinks>
         </NavBarLinksContainer>
         <NavBarCtaContainer>
           <NavBarSearchIcon href="#search">
