@@ -30,6 +30,16 @@ const Button = ({ url, ctaTxt, opensNewTab, color }) => {
     }
   };
 
+  const handleBorderColor = () => {
+    if(color ==='primary'){
+      return 'transparent'
+    } else if (color === 'primary_blk_brder'){
+      return 'black'
+    } else if (color === 'secondary'){
+      return '#FFF'
+    }
+  }
+
   const handleHoverColor = () => {
     if (color === "primary_blk_brdr") {
       return "#e6e6e6";
@@ -39,7 +49,7 @@ const Button = ({ url, ctaTxt, opensNewTab, color }) => {
   return (
     <ButtonWrapper
       color={handleBgColor()}
-      border={handleTextColor()}
+      border={handleBorderColor()}
       hover={handleHoverColor()}
     >
       <ButtonLink href={url} color={handleTextColor()} target={handleClick()}>

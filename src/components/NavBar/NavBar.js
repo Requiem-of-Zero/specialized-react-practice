@@ -26,7 +26,7 @@ const NavBar = ({ categories }) => {
     for(let i=0; i < categories.length; i++){
       let indivCategory = categories[i]
       if((indivCategory.id + 1) === dropDownId){
-       return indivCategory.megaNav ? <MegaNav {...indivCategory.megaNav} onMouseLeave={() => setIsShown(false)}/> : <></>;
+       return indivCategory.megaNav ? <MegaNav {...indivCategory.megaNav} /> : <></>;
       }
     }
   }
@@ -47,7 +47,7 @@ const NavBar = ({ categories }) => {
                     key={key}
                     onMouseEnter={() => {
                       setIsShown(true);
-                      setDropDownId(i + 1)
+                      setDropDownId(i + 1);
                     }}
                   >
                     {category.categoryTitle}
@@ -69,7 +69,7 @@ const NavBar = ({ categories }) => {
           </NavBarCart>
         </NavBarCtaContainer>
       </NavBarContainer>
-      <DropDownContainer>
+      <DropDownContainer onMouseLeave={() => setIsShown(false)}>
         {isShown && handleDropDown(categories)}
       </DropDownContainer>
     </NavBarWrapper>
