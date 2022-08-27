@@ -172,8 +172,11 @@ export const categories = [
       },
     },
   },
+
+  
+  // Turbo E-Bikes DropDown Data
   {
-    id:1,
+    id: 1,
     categoryTitle: "Turbo E-Bikes",
     categoryUrl: "https://www.google.com",
     megaNav: {
@@ -192,12 +195,6 @@ export const categories = [
             url: "https://www.google.com",
           },
         ],
-        cta: {
-          ctaTxt: "Shop By Model",
-          url: "https://www.google.com",
-          opensNewTab: true,
-          color: "primary_blk_brdr",
-        },
       },
 
       megaNavMiddleSection: {
@@ -345,6 +342,9 @@ export const categories = [
       },
     },
   },
+  // End Turbo E-Bikes DropDown Data
+
+
   {
     id: 2,
     categoryTitle: "Equipment",

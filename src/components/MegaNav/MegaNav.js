@@ -59,7 +59,7 @@ const MegaNav = ({
               );
             })}
           </MegaNavLinkList>
-          <Button {...megaNavLeftSection.cta} />
+          {megaNavLeftSection.cta ? <Button {...megaNavLeftSection.cta} /> : <></>}
         </MegaNavLeftContainer>
         <NavBreak></NavBreak>
         <MegaNavMiddleContainer>
