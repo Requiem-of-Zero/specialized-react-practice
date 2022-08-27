@@ -18,6 +18,6 @@ export const ButtonWrapper = styled.div`
 export const ButtonLink = styled.a`
   color: ${({ color }) => color};
   text-decoration: none;
-  padding: 1rem 0.75rem;
+  padding: 1rem 2rem;
   margin: 0 auto;
 `;

@@ -13,5 +13,5 @@ const Template = (args) => <NavBar {...args} />;
 //👇 Each story then reuses that template
 export const Primary = Template.bind({});
 Primary.args = {
-   ...categories
+   categories
 };

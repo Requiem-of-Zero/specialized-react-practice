@@ -1,5 +1,6 @@
 export const categories = [
   {
+    id: 0,
     categoryTitle: "Bikes",
     categoryUrl: "https://www.google.com",
     megaNav: {
@@ -172,6 +173,7 @@ export const categories = [
     },
   },
   {
+    id:1,
     categoryTitle: "Turbo E-Bikes",
     categoryUrl: "https://www.google.com",
     megaNav: {
@@ -344,6 +346,7 @@ export const categories = [
     },
   },
   {
+    id: 2,
     categoryTitle: "Equipment",
     categoryUrl: "https://www.google.com",
     megaNav: {
@@ -516,6 +519,7 @@ export const categories = [
     },
   },
   {
+    id: 3,
     categoryTitle: "Sale",
     categoryUrl: "https://www.google.com",
     megaNav: {
@@ -688,6 +692,7 @@ export const categories = [
     },
   },
   {
+    id: 4,
     categoryTitle: "Inside Specialized",
     categoryUrl: "https://www.google.com",
     megaNav: {

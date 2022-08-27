@@ -2,12 +2,16 @@ import styled from "styled-components";
 
 export const MegaNavWrapper = styled.div`
   width: 100%;
+  display: block;
+  z-index: 9;
 `;
 
 export const MegaNavContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 70px;
+  background: #FFF;
 `;
 
 export const MegaNavLeftContainer = styled.div`
@@ -15,13 +19,16 @@ export const MegaNavLeftContainer = styled.div`
   letter-spacing: 1px;
   font-size: 12px;
   padding-right: 30px;
+  padding-top: 30px;
 `;
 
 export const MegaNavMiddleContainer = styled.div`
   padding-left: 30px;
+  padding-top: 30px;
 `;
 
 export const MegaNavRightContainer = styled.div`
+  padding-top: 30px;
 `;
 
 export const NavBreak = styled.div`

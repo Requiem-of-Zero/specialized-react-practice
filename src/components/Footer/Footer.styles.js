@@ -45,6 +45,7 @@ margin-bottom: 30px;
 `;
 
 export const MissionControlColContainer = styled.div`
+margin-top: 12px;
 `;
 
 export const MissionControlLink = styled.a`

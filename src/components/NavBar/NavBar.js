@@ -10,6 +10,7 @@ import {
   NavBarWishlistIcon,
   NavBarCart,
   NavBarContainer,
+  DropDownContainer
 } from "./NavBar.styles";
 import MegaNav from "../MegaNav/MegaNav";
 import { useState } from "react";
@@ -17,24 +18,16 @@ import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
-const NavBar = ( categories ) => {
-  console.log(categories, 'categories')
-  const handleCategoryNav = (categories) => {
-    const keys = Object.keys(categories)
-    const result = [];
-    for (let i = 0; i < keys.length; i++) {
-      let key = keys[i]
-      result.push(
-        <li>
-          <NavBarLink href={categories[key].categoryUrl}>
-            {categories[key].categoryTitle}
-          </NavBarLink>
-        </li>
-      );
+const NavBar = ({ categories }) => {
+  const [dropDownId, setDropDownId] = useState(0);
+  const handleDropDown = (categories) => {
+    for(let i=0; i < categories.length; i++){
+      let indivCategory = categories[i]
+      if((indivCategory.id + 1) === dropDownId){
+        return <MegaNav {...indivCategory.megaNav} />;
+      }
     }
-    return result;
-  };
-
+  }
   return (
     <NavBarWrapper>
       <NavBarContainer>
@@ -42,7 +35,22 @@ const NavBar = ( categories ) => {
           <NavBarLogo src="https://cdn.shopify.com/s/files/1/0904/4132/files/spec-logo-bp.jpg?v=1585000290" />
         </a>
         <NavBarLinksContainer>
-          <NavBarLinks>{handleCategoryNav(categories)}</NavBarLinks>
+          <NavBarLinks>
+            {categories.map((category, i) => {
+              let key = "navbar_link-" + i;
+              return (
+                <li>
+                  <NavBarLink
+                    href={category.categoryUrl}
+                    key={key}
+                    onMouseEnter={() => setDropDownId(i + 1)}
+                  >
+                    {category.categoryTitle}
+                  </NavBarLink>
+                </li>
+              );
+            })}
+          </NavBarLinks>
         </NavBarLinksContainer>
         <NavBarCtaContainer>
           <NavBarSearchIcon href="#search">
@@ -56,6 +64,9 @@ const NavBar = ( categories ) => {
           </NavBarCart>
         </NavBarCtaContainer>
       </NavBarContainer>
+      <DropDownContainer>
+        {handleDropDown(categories)}
+      </DropDownContainer>
     </NavBarWrapper>
   );
 };

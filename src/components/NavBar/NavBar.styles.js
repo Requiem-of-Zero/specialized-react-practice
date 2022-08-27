@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const NavBarWrapper = styled.div`
   width: 100%;
+  position: fixed;
+  z-index: 9;
 `;
 
 export const NavBarContainer = styled.div`
@@ -25,6 +27,10 @@ export const NavBarCtaContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 8%;
+`;
+
+export const DropDownContainer = styled.div`
+
 `;
 
 export const NavBarLogo = styled.img`
