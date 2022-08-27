@@ -20,11 +20,13 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const NavBar = ({ categories }) => {
   const [dropDownId, setDropDownId] = useState(0);
+  const [isShown, setIsShown] = useState(false);
+
   const handleDropDown = (categories) => {
     for(let i=0; i < categories.length; i++){
       let indivCategory = categories[i]
       if((indivCategory.id + 1) === dropDownId){
-        return <MegaNav {...indivCategory.megaNav} />;
+       return indivCategory.megaNav ? <MegaNav {...indivCategory.megaNav} onMouseLeave={() => setIsShown(false)}/> : <></>;
       }
     }
   }
@@ -43,7 +45,10 @@ const NavBar = ({ categories }) => {
                   <NavBarLink
                     href={category.categoryUrl}
                     key={key}
-                    onMouseEnter={() => setDropDownId(i + 1)}
+                    onMouseEnter={() => {
+                      setIsShown(true);
+                      setDropDownId(i + 1)
+                    }}
                   >
                     {category.categoryTitle}
                   </NavBarLink>
@@ -65,7 +70,7 @@ const NavBar = ({ categories }) => {
         </NavBarCtaContainer>
       </NavBarContainer>
       <DropDownContainer>
-        {handleDropDown(categories)}
+        {isShown && handleDropDown(categories)}
       </DropDownContainer>
     </NavBarWrapper>
   );

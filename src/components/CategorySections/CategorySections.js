@@ -4,7 +4,6 @@ import {
   CategorySectionsWrapper,
 } from "./CategorySections.styles";
 import CategorySection from "../CategorySection/CategorySection";
-import model from "./data/model";
 
 const CategorySections = ({ sections }) => {
 
@@ -12,7 +11,7 @@ const CategorySections = ({ sections }) => {
     <CategorySectionsWrapper>
       <CategorySectionsContainer>
             <li>
-              <CategorySection section={model}/>
+              <CategorySection section={sections}/>
             </li>
       </CategorySectionsContainer>
     </CategorySectionsWrapper>
