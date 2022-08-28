@@ -38,6 +38,7 @@ export const RideAppLink = styled.a`
   letter-spacing: 1px;
   line-height: 1.5;
   margin: 0 0 0.75rem;
+  text-decoration: none;
 `;
 
 export const MissionControlContainer = styled.div`
@@ -49,6 +50,7 @@ margin-top: 12px;
 `;
 
 export const MissionControlLink = styled.a`
+text-decoration: none;
   text-transform: uppercase;
   color: white;
   font-size: 14px;

@@ -27,13 +27,15 @@ const Footer = ({ sections, socials }) => {
         })}
         <AppContainer>
           <RideAppContainer>
-            <RideAppLink>Ride App</RideAppLink>
+            <RideAppLink href="https://www.google.com">Ride App</RideAppLink>
             <RideAppColContainer>
               <AppleImg src="https://www.specialized.com/_ui/addons/specializedstorefrontaddon/desktop/common/images/apps/app-store-black.svg" />
               <GoogleImg src="https://www.specialized.com/_ui/addons/specializedstorefrontaddon/desktop/common/images/apps/google-play-black.svg" />
             </RideAppColContainer>
             <MissionControlContainer>
-              <MissionControlLink>Mission Control</MissionControlLink>
+              <MissionControlLink href="https://www.google.com">
+                Mission Control
+              </MissionControlLink>
               <MissionControlColContainer>
                 <AppleImg src="https://www.specialized.com/_ui/addons/specializedstorefrontaddon/desktop/common/images/apps/app-store-black.svg" />
                 <GoogleImg src="https://www.specialized.com/_ui/addons/specializedstorefrontaddon/desktop/common/images/apps/google-play-black.svg" />
@@ -41,10 +43,10 @@ const Footer = ({ sections, socials }) => {
             </MissionControlContainer>
           </RideAppContainer>
           <SocialsContainer>
-          {socials.map((connection, i) => {
-            const key = "foot_nav_connection" + i;
-            return <FooterSocials {...connection} key={key} />;
-          })}
+            {socials.map((connection, i) => {
+              const key = "foot_nav_connection" + i;
+              return <FooterSocials {...connection} key={key} />;
+            })}
           </SocialsContainer>
         </AppContainer>
         <FooterContact />
