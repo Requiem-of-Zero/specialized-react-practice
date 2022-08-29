@@ -9,11 +9,11 @@ import {
 } from "./Banner.styles";
 import Button from "../Button/Button";
 
-const Banner = ({ subtitle, title, ctas, imgUrl }) => {
+const Banner = ({ subtitle, title, ctas, imgUrl, align }) => {
   return (
     <BannerWrapper imgUrl={imgUrl}>
       <BannerContainer>
-        <ContentContainer>
+        <ContentContainer align={align}>
           <BannerSubHeader>{subtitle}</BannerSubHeader>
           <BannerHeader>{title}</BannerHeader>
           <CtaContainer>

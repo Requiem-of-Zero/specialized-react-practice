@@ -15,6 +15,10 @@ export const ContentContainer = styled.div`
   bottom: 40%;
   right: 10%;
   max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: ${({align}) => align};
+  text-align: ${({align}) => align};
 `;
 
 export const BannerContainer = styled.div`

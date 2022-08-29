@@ -4,7 +4,6 @@ import {
   QuadBannerContainer,
   QuadBannerWrapper,
 } from "./QuadBanner.styles";
-
 import Banner from "../Banner/Banner";
 
 const QuadBanner = ({ banners }) => {
