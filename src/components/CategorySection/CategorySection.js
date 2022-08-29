@@ -7,6 +7,7 @@ import {
   CategorySectionList
 } from "./CategorySection.styles";
 import model from "../CategorySection/data/model";
+
 const CategorySection = ({ section }) => {
   return section.map(s => (
     <CategorySectionWrapper>

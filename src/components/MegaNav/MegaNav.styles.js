@@ -25,6 +25,8 @@ export const MegaNavLeftContainer = styled.div`
 export const MegaNavMiddleContainer = styled.div`
   padding-left: 30px;
   padding-top: 30px;
+  padding-right: 30px;
+  min-width: 630px;
 `;
 
 export const MegaNavRightContainer = styled.div`
@@ -32,9 +34,9 @@ export const MegaNavRightContainer = styled.div`
 `;
 
 export const NavBreak = styled.div`
-height: 400px;
-width: 1px;
-background-color: #e6e6e6;
+  height: 400px;
+  width: 1px;
+  background-color: #e6e6e6;
 `
 
 export const MegaNavLeftLink = styled.a`
