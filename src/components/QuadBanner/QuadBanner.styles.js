@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const QuadBannerWrapper = styled.div`
-
+  padding: 30px;
 `;
 
 export const QuadBannerContainer = styled.div`

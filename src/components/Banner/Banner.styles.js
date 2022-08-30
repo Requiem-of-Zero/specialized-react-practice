@@ -1,29 +1,33 @@
 import styled from "styled-components";
 
 export const BannerWrapper = styled.div`
-  position: relative;
   border: 1px solid black;
   background: ${({ imgUrl }) => `url(${imgUrl})`};
   background-size: cover;
-  height: ${({imgHeight}) => imgHeight};
+  height: ${({ imgHeight }) => imgHeight};
   width: 100%;
   border: none;
+  display: flex;
+  justify-content: flex-end;
+`;
+
+export const BannerContainer = styled.div`
+  font-family: "Arial";
+  display: flex;
+  height: ${({ height }) => height};
+  width: ${({ctaWidth}) => ctaWidth};
+  align-items: center;
 `;
 
 export const ContentContainer = styled.div`
   display: flex;
-flex-direction: column;
-justify-content: center;
-height: ${({height}) => height};
-  width: 100%;
+  flex-direction: column;
+  justify-content: ${({justify}) => justify};
   align-items: ${({align}) => align};
-  text-align: ${({align}) => align};
+  height: ${({height}) => height};
+  width: 100%;
 `;
 
-export const BannerContainer = styled.div`
-  margin: 0 auto;
-  font-family: "Arial";
-`;
 
 export const CtaContainer = styled.div`
   display: flex;
@@ -34,7 +38,7 @@ export const CtaContainer = styled.div`
 
 export const BannerHeader = styled.h2`
   color: #fff;
-  font-size: 48px;
+  font-size: ${({headerSize}) => headerSize};
   padding-bottom: 1rem;
 `;
 
