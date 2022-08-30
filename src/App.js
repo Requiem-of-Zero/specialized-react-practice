@@ -17,7 +17,7 @@ class App extends React.Component {
       <>
         <SecondaryNavBar />
         <NavBar categories={categories}/>
-        <Banner {...bannerArgs}/>
+        <Banner {...bannerArgs} imgHeight='1100px'/>
         <Tiles products={products} />
         <Footer sections={sections} socials={socials} />
         <SecondaryFooter footerLinks={legalLinks} />

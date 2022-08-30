@@ -13,7 +13,7 @@ const QuadBanner = ({ banners }) => {
         {banners.map((block, i) => {
           const key = 'grid_block-' + i
           return <QuadBannerBlockContainer>
-            <Banner {...block} key={key}/>
+            <Banner {...block} key={key} imgHeight='476px' align='center'/>
           </QuadBannerBlockContainer>;
         })}
       </QuadBannerContainer>

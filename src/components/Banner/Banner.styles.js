@@ -5,26 +5,23 @@ export const BannerWrapper = styled.div`
   border: 1px solid black;
   background: ${({ imgUrl }) => `url(${imgUrl})`};
   background-size: cover;
-  height: 1100px;
+  height: ${({imgHeight}) => imgHeight};
   width: 100%;
   border: none;
 `;
 
 export const ContentContainer = styled.div`
-  position: absolute;
-  bottom: 40%;
-  right: 10%;
-  max-width: 500px;
   display: flex;
-  flex-direction: column;
+flex-direction: column;
+justify-content: center;
+height: ${({height}) => height};
+  width: 100%;
   align-items: ${({align}) => align};
   text-align: ${({align}) => align};
 `;
 
 export const BannerContainer = styled.div`
   margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
   font-family: "Arial";
 `;
 
