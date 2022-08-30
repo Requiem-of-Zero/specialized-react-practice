@@ -10,8 +10,7 @@ export const MegaNavContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 70px;
-  background: #FFF;
+  background: #fff;
 `;
 
 export const MegaNavLeftContainer = styled.div`
@@ -37,7 +36,7 @@ export const NavBreak = styled.div`
   height: 400px;
   width: 1px;
   background-color: #e6e6e6;
-`
+`;
 
 export const MegaNavLeftLink = styled.a`
   text-decoration: none;
@@ -57,7 +56,7 @@ export const MegaNavLinkList = styled.ul`
   text-transform: uppercase;
   padding: 0;
 
-  a:last-child{
+  a:last-child {
     margin: 0 0 23px;
   }
 `;

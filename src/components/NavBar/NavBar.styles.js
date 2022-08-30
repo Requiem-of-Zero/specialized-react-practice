@@ -4,11 +4,11 @@ export const NavBarWrapper = styled.div`
   width: 100%;
   position: fixed;
   z-index: 9;
+  top: 0;
 `;
 
-export const NavBarContainer = styled.div`
+export const NavBarContainer = styled.nav`
   display: flex;
-  position: fixed;
   border-bottom: 1px solid white;
   height: 70px;
   z-index: 9;

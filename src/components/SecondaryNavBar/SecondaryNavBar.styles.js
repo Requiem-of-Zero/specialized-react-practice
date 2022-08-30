@@ -4,7 +4,8 @@ export const SecondaryNavBarWrapper = styled.div`
   width: 100%;
   background-color: black;
   height: 32px;
-  z-index: 8;
+  z-index: 10;
+  display: fixed;
 `;
 
 export const SecondaryNavContentContainer = styled.div`

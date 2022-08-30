@@ -1,6 +1,6 @@
 import React from "react";
 import QuadBanner from "./QuadBanner";
-import model from "./data/model";
+import QuadBannerArgs from "../../constants/QuadBannerArgs";
 
 export default {
   title: "QuadBanner",
@@ -12,5 +12,5 @@ const Template = (args) => <QuadBanner {...args} />;
 export const Blocks = Template.bind({});
 
 Blocks.args = {
-  ...model
+  ...QuadBannerArgs,
 };

@@ -1,6 +1,7 @@
 const QuadBannerArgs = {
   banners: [
     {
+      justify: "center",
       align: "center",
       subtitle: "All-New S-Works Torch",
       title: "Engineered To Disappear",
@@ -22,6 +23,7 @@ const QuadBannerArgs = {
       ],
     },
     {
+      justify: "center",
       align: "center",
       subtitle: "Tire Finder",
       title: "Find the Perfect Tie for Any Ride",
@@ -37,6 +39,7 @@ const QuadBannerArgs = {
       ],
     },
     {
+      justify: "center",
       align: "center",
       subtitle: "Find a Retailer Near You",
       title: "So Much More in Store",
@@ -52,6 +55,7 @@ const QuadBannerArgs = {
       ],
     },
     {
+      justify: "center",
       align: "center",
       subtitle: "Specialized Ride App",
       title: "Get More From Your Rides",
